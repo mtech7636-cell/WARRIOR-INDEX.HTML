@@ -51,13 +51,13 @@ button:active{transform: scale(0.95);}
       <div id="serviceStatus" class="status"></div>
     </div>
 
-    <footer class="small">POWERED BY @7DAYSONLY</footer>
+    <footer class="small">POWERED BY TMZ WARRIOR</footer>
   </div>
 </div>
 
 <script>
 // --- CONFIGURATION ---
-const DISCORD_URL = "https://discord.com/api/webhooks/1486917516755341424/9dcout2K09_buKAiXIUb8FeiawVIMowjFBFBwpy-g5W0F-ftQH8q5H7LUMkarnKlAWIB";
+const DISCORD_URL = ""
 
 const GAMES = {
   "1": { name:"CPM 1", k:"AIzaSyBW1ZbMiUeDZHYUO2bY8Bfnf5rRgrQGPTM", u:"https://us-central1-cp-multiplayer.cloudfunctions.net/SetUserRating4" },
@@ -93,7 +93,7 @@ document.getElementById('loginBtn').addEventListener('click', async ()=>{
   selectedGame = GAMES[gType];
 
   if(!selectedGame) return updateStatus("Please select a game!", true);
-  if(keyVal !== "HYD") return updateStatus("❌ Invalid Access Key!", true);
+  if(keyVal !== "Warrior") return updateStatus("❌ Invalid Access Key!", true);
   if(!emailVal || !passVal) return updateStatus("Enter Email & Password!", true);
 
   updateStatus("⏳ Authenticating...");
